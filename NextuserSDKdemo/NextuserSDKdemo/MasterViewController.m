@@ -9,6 +9,8 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 
+@import NextUser;
+
 @interface MasterViewController ()
 
 @property NSMutableArray *objects;
@@ -24,6 +26,15 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
+    
+    NUTracker *tracker = [NUTracker sharedTracker];
+    tracker.logLevel = NULogLevelVerbose;
+    [tracker startSessionWithTrackIdentifier:@"demo_1"];
+    [tracker identifyUserWithIdentifier:@"marin+ios2@test.com"];
+    
+    NUAction *action = [NUAction actionWithName:@"test_action"];
+    [tracker trackAction:action];
 }
 
 

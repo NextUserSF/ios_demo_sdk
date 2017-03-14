@@ -1,0 +1,10 @@
+platform :ios, '8.0'
+use_frameworks!
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/NextUserSF/NextUserPodSpecs.git'
+
+target 'NextuserSDKdemo' do
+    pod 'KontaktSDK', '~> 1.0'
+    pod "NextUser", '~> 0.0.4'
+end

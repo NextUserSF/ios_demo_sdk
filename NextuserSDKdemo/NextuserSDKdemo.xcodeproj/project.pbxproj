@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08989B8266A1C384875CD2B7 /* Pods_NextuserSDKdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC0AF7F94FDD101D1568D6 /* Pods_NextuserSDKdemo.framework */; };
 		9CFD11801E78379F0092023E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD117F1E78379F0092023E /* main.m */; };
 		9CFD11831E78379F0092023E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD11821E78379F0092023E /* AppDelegate.m */; };
 		9CFD11861E78379F0092023E /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD11851E78379F0092023E /* MasterViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20FC0AF7F94FDD101D1568D6 /* Pods_NextuserSDKdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextuserSDKdemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E121326BFA125E81E658DA2 /* Pods-NextuserSDKdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextuserSDKdemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NextuserSDKdemo/Pods-NextuserSDKdemo.release.xcconfig"; sourceTree = "<group>"; };
 		9CFD117B1E78379F0092023E /* NextuserSDKdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextuserSDKdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFD117F1E78379F0092023E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9CFD11811E78379F0092023E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		9CFD11A21E78379F0092023E /* NextuserSDKdemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextuserSDKdemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFD11A61E78379F0092023E /* NextuserSDKdemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextuserSDKdemoUITests.m; sourceTree = "<group>"; };
 		9CFD11A81E78379F0092023E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B069F5A10C9F7AAC4826F685 /* Pods-NextuserSDKdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextuserSDKdemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NextuserSDKdemo/Pods-NextuserSDKdemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08989B8266A1C384875CD2B7 /* Pods_NextuserSDKdemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D73EB7139BE06E319773342 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B069F5A10C9F7AAC4826F685 /* Pods-NextuserSDKdemo.debug.xcconfig */,
+				4E121326BFA125E81E658DA2 /* Pods-NextuserSDKdemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9CFD11721E78379E0092023E = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +102,8 @@
 				9CFD119A1E78379F0092023E /* NextuserSDKdemoTests */,
 				9CFD11A51E78379F0092023E /* NextuserSDKdemoUITests */,
 				9CFD117C1E78379F0092023E /* Products */,
+				5D73EB7139BE06E319773342 /* Pods */,
+				A1AEB0B434A56BF9938823AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +161,14 @@
 			path = NextuserSDKdemoUITests;
 			sourceTree = "<group>";
 		};
+		A1AEB0B434A56BF9938823AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20FC0AF7F94FDD101D1568D6 /* Pods_NextuserSDKdemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CFD11AB1E78379F0092023E /* Build configuration list for PBXNativeTarget "NextuserSDKdemo" */;
 			buildPhases = (
+				B12A9416A33FB3F01635B62A /* [CP] Check Pods Manifest.lock */,
 				9CFD11771E78379F0092023E /* Sources */,
 				9CFD11781E78379F0092023E /* Frameworks */,
 				9CFD11791E78379F0092023E /* Resources */,
+				55EA6A8D33F4745FCBF62CEE /* [CP] Embed Pods Frameworks */,
+				CDEE6188A8D37BBC355BC4BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,6 +299,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55EA6A8D33F4745FCBF62CEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NextuserSDKdemo/Pods-NextuserSDKdemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B12A9416A33FB3F01635B62A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CDEE6188A8D37BBC355BC4BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NextuserSDKdemo/Pods-NextuserSDKdemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CFD11771E78379F0092023E /* Sources */ = {
@@ -428,9 +503,11 @@
 		};
 		9CFD11AC1E78379F0092023E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B069F5A10C9F7AAC4826F685 /* Pods-NextuserSDKdemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NextuserSDKdemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Nextuser.NextuserSDKdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,9 +516,11 @@
 		};
 		9CFD11AD1E78379F0092023E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E121326BFA125E81E658DA2 /* Pods-NextuserSDKdemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NextuserSDKdemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Nextuser.NextuserSDKdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +592,7 @@
 				9CFD11AD1E78379F0092023E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CFD11AE1E78379F0092023E /* Build configuration list for PBXNativeTarget "NextuserSDKdemoTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +601,7 @@
 				9CFD11B01E78379F0092023E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CFD11B11E78379F0092023E /* Build configuration list for PBXNativeTarget "NextuserSDKdemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +610,7 @@
 				9CFD11B31E78379F0092023E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
