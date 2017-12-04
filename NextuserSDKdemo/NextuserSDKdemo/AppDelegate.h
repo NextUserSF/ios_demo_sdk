@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@import NextUser;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

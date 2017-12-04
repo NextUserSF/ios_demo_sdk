@@ -7,13 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailViewController.h"
+#import "Product.h"
+#import "ProductsTableRowView.h"
 
+@import NextUser;
 @class DetailViewController;
 
 @interface MasterViewController : UITableViewController
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
-
+@property (strong, nonatomic) IBOutlet UITableView *productsTable;
 
 @end
 

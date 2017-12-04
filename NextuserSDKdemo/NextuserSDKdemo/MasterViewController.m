@@ -1,42 +1,34 @@
-//
-//  MasterViewController.m
-//  NextuserSDKdemo
-//
-//  Created by Marin Bek on 14/03/2017.
-//  Copyright © 2017 Marin Bek. All rights reserved.
-//
-
 #import "MasterViewController.h"
-#import "DetailViewController.h"
-
-@import NextUser;
 
 @interface MasterViewController ()
-
-@property NSMutableArray *objects;
+{
+    NSMutableArray<Product *> *products;
+}
 @end
 
 @implementation MasterViewController
+@synthesize productsTable;
+
+- (instancetype) init {
+    self = [super init];
+    if (self) {
+        
+        
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
-    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
-    
-    
-    NUTracker *tracker = [NUTracker sharedTracker];
-    tracker.logLevel = NULogLevelVerbose;
-    [tracker startSessionWithTrackIdentifier:@"demo_1"];
-    [tracker identifyUserWithIdentifier:@"marin+ios2@test.com"];
-    
-    NUAction *action = [NUAction actionWithName:@"test_action"];
-    [tracker trackAction:action];
+    products = [[NSMutableArray alloc] init];
+    [products addObject:[Product generateProduct:@"1" withName:@"Boots" withPrice:72 withImageResource:@"boots.jpg" withDescription:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit."]];
+    [products addObject:[Product generateProduct:@"2" withName:@"Can" withPrice:2 withImageResource:@"can.jpg" withDescription:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit."]];
+    [products addObject:[Product generateProduct:@"3" withName:@"Cheese" withPrice:32 withImageResource:@"cheese.jpg" withDescription:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit."]];
+    [products addObject:[Product generateProduct:@"4" withName:@"Shoes" withPrice:122 withImageResource:@"shoes.jpg" withDescription:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit."]];
+    [products addObject:[Product generateProduct:@"5" withName:@"Vaseline" withPrice:22 withImageResource:@"vaseline.jpg" withDescription:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit."]];
+    //
+    //    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
-
 
 - (void)viewWillAppear:(BOOL)animated {
     self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
@@ -49,30 +41,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (void)insertNewObject:(id)sender {
-    if (!self.objects) {
-        self.objects = [[NSMutableArray alloc] init];
-    }
-    [self.objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-}
-
-
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.objects[indexPath.row];
-        DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-        [controller setDetailItem:object];
-        controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
-        controller.navigationItem.leftItemsSupplementBackButton = YES;
+        Product *product = products[indexPath.row];
+        DetailViewController *controller = (DetailViewController *)[segue destinationViewController];
+        [controller setDetailItem:product];
     }
 }
-
 
 #pragma mark - Table View
 
@@ -82,16 +60,47 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.objects.count;
+    return products.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    static NSString *CellIdentifier = @"productCell";
+    ProductsTableRowView *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    Product *product = products[indexPath.row];
+    
+    //image view
+    CGFloat imageWidth = 50;
+    CGFloat imageHeight = 50;
+    [cell.productImage setTranslatesAutoresizingMaskIntoConstraints: NO];
+    UIImage* image = [UIImage imageNamed:product.imageResource];
+    cell.productImage.image = [self scaleImage:image toSize:CGSizeMake(imageWidth, imageHeight)];
+    [cell.productImage setContentMode:UIViewContentModeScaleAspectFit];
+    
+    cell.productName.text = product.name;
+    cell.productPrice.text = [[[NSNumber numberWithDouble:product.price] stringValue] stringByAppendingString:@"$"];
+    
     return cell;
+}
+
+- (UIImage *)scaleImage:(UIImage *)imageToResize toSize:(CGSize)theNewSize {
+    
+    CGFloat width = imageToResize.size.width;
+    CGFloat height = imageToResize.size.height;
+    float scaleFactor;
+    if(width > height) {
+        scaleFactor = theNewSize.height / height;
+    } else {
+        scaleFactor = theNewSize.width / width;
+    }
+    
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(width * scaleFactor, height * scaleFactor), NO, 0.0);
+    [imageToResize drawInRect:CGRectMake(0, 0, width * scaleFactor, height * scaleFactor)];
+    UIImage *resizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return resizedImage;
 }
 
 
@@ -100,15 +109,11 @@
     return YES;
 }
 
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.objects removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }
+// when user tap the row, what action you want to perform
+- (void)tableView:(UITableView *)theTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //[self performSegueWithIdentifier:@"show" sender:self];
 }
 
-
 @end
+

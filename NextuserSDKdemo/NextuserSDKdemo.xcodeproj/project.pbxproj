@@ -8,13 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		08989B8266A1C384875CD2B7 /* Pods_NextuserSDKdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC0AF7F94FDD101D1568D6 /* Pods_NextuserSDKdemo.framework */; };
+		55025DC11FD597490062F788 /* CartItemTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DBA1FD597480062F788 /* CartItemTableRowView.m */; };
+		55025DC21FD597490062F788 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DBB1FD597480062F788 /* Cart.m */; };
+		55025DC31FD597490062F788 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DBD1FD597490062F788 /* CartViewController.m */; };
+		55025DC41FD597490062F788 /* CartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DBF1FD597490062F788 /* CartItem.m */; };
+		55025DCC1FD597510062F788 /* nextuser.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55025DC51FD597500062F788 /* nextuser.plist */; };
+		55025DCD1FD597510062F788 /* ProductsTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DC71FD597500062F788 /* ProductsTableRowView.m */; };
+		55025DCE1FD597510062F788 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DCA1FD597500062F788 /* Product.m */; };
+		55025DCF1FD597510062F788 /* UserDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DCB1FD597510062F788 /* UserDataViewController.m */; };
+		55025DD11FD5975E0062F788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55025DD01FD5975D0062F788 /* Assets.xcassets */; };
+		55025DD61FD599280062F788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55025DD41FD599270062F788 /* Main.storyboard */; };
 		9CFD11801E78379F0092023E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD117F1E78379F0092023E /* main.m */; };
 		9CFD11831E78379F0092023E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD11821E78379F0092023E /* AppDelegate.m */; };
 		9CFD11861E78379F0092023E /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD11851E78379F0092023E /* MasterViewController.m */; };
 		9CFD11891E78379F0092023E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD11881E78379F0092023E /* DetailViewController.m */; };
-		9CFD118C1E78379F0092023E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFD118A1E78379F0092023E /* Main.storyboard */; };
 		9CFD118E1E78379F0092023E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFD118D1E78379F0092023E /* Assets.xcassets */; };
-		9CFD11911E78379F0092023E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFD118F1E78379F0092023E /* LaunchScreen.storyboard */; };
 		9CFD119C1E78379F0092023E /* NextuserSDKdemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD119B1E78379F0092023E /* NextuserSDKdemoTests.m */; };
 		9CFD11A71E78379F0092023E /* NextuserSDKdemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD11A61E78379F0092023E /* NextuserSDKdemoUITests.m */; };
 /* End PBXBuildFile section */
@@ -39,6 +47,23 @@
 /* Begin PBXFileReference section */
 		20FC0AF7F94FDD101D1568D6 /* Pods_NextuserSDKdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextuserSDKdemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E121326BFA125E81E658DA2 /* Pods-NextuserSDKdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextuserSDKdemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NextuserSDKdemo/Pods-NextuserSDKdemo.release.xcconfig"; sourceTree = "<group>"; };
+		55025DB91FD597480062F788 /* CartItemTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItemTableRowView.h; sourceTree = "<group>"; };
+		55025DBA1FD597480062F788 /* CartItemTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItemTableRowView.m; sourceTree = "<group>"; };
+		55025DBB1FD597480062F788 /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
+		55025DBC1FD597480062F788 /* CartViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewContoller.h; sourceTree = "<group>"; };
+		55025DBD1FD597490062F788 /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
+		55025DBE1FD597490062F788 /* CartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItem.h; sourceTree = "<group>"; };
+		55025DBF1FD597490062F788 /* CartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItem.m; sourceTree = "<group>"; };
+		55025DC01FD597490062F788 /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cart.h; sourceTree = "<group>"; };
+		55025DC51FD597500062F788 /* nextuser.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nextuser.plist; sourceTree = "<group>"; };
+		55025DC61FD597500062F788 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		55025DC71FD597500062F788 /* ProductsTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsTableRowView.m; sourceTree = "<group>"; };
+		55025DC81FD597500062F788 /* ProductsTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsTableRowView.h; sourceTree = "<group>"; };
+		55025DC91FD597500062F788 /* UserDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataViewController.h; sourceTree = "<group>"; };
+		55025DCA1FD597500062F788 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		55025DCB1FD597510062F788 /* UserDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataViewController.m; sourceTree = "<group>"; };
+		55025DD01FD5975D0062F788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55025DD51FD599270062F788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CFD117B1E78379F0092023E /* NextuserSDKdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextuserSDKdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFD117F1E78379F0092023E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9CFD11811E78379F0092023E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,9 +72,7 @@
 		9CFD11851E78379F0092023E /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		9CFD11871E78379F0092023E /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		9CFD11881E78379F0092023E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		9CFD118B1E78379F0092023E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CFD118D1E78379F0092023E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9CFD11901E78379F0092023E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CFD11921E78379F0092023E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CFD11971E78379F0092023E /* NextuserSDKdemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextuserSDKdemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFD119B1E78379F0092023E /* NextuserSDKdemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextuserSDKdemoTests.m; sourceTree = "<group>"; };
@@ -120,15 +143,30 @@
 		9CFD117D1E78379F0092023E /* NextuserSDKdemo */ = {
 			isa = PBXGroup;
 			children = (
+				55025DD41FD599270062F788 /* Main.storyboard */,
+				55025DD01FD5975D0062F788 /* Assets.xcassets */,
+				55025DC51FD597500062F788 /* nextuser.plist */,
+				55025DC61FD597500062F788 /* Product.h */,
+				55025DCA1FD597500062F788 /* Product.m */,
+				55025DC81FD597500062F788 /* ProductsTableRowView.h */,
+				55025DC71FD597500062F788 /* ProductsTableRowView.m */,
+				55025DC91FD597500062F788 /* UserDataViewController.h */,
+				55025DCB1FD597510062F788 /* UserDataViewController.m */,
+				55025DC01FD597490062F788 /* Cart.h */,
+				55025DBB1FD597480062F788 /* Cart.m */,
+				55025DBE1FD597490062F788 /* CartItem.h */,
+				55025DBF1FD597490062F788 /* CartItem.m */,
+				55025DB91FD597480062F788 /* CartItemTableRowView.h */,
+				55025DBA1FD597480062F788 /* CartItemTableRowView.m */,
+				55025DBC1FD597480062F788 /* CartViewContoller.h */,
+				55025DBD1FD597490062F788 /* CartViewController.m */,
 				9CFD11811E78379F0092023E /* AppDelegate.h */,
 				9CFD11821E78379F0092023E /* AppDelegate.m */,
 				9CFD11841E78379F0092023E /* MasterViewController.h */,
 				9CFD11851E78379F0092023E /* MasterViewController.m */,
 				9CFD11871E78379F0092023E /* DetailViewController.h */,
 				9CFD11881E78379F0092023E /* DetailViewController.m */,
-				9CFD118A1E78379F0092023E /* Main.storyboard */,
 				9CFD118D1E78379F0092023E /* Assets.xcassets */,
-				9CFD118F1E78379F0092023E /* LaunchScreen.storyboard */,
 				9CFD11921E78379F0092023E /* Info.plist */,
 				9CFD117E1E78379F0092023E /* Supporting Files */,
 			);
@@ -234,12 +272,13 @@
 		9CFD11731E78379E0092023E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Marin Bek";
 				TargetAttributes = {
 					9CFD117A1E78379F0092023E = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = V223KM7TSG;
+						ProvisioningStyle = Manual;
 					};
 					9CFD11961E78379F0092023E = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -278,9 +317,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CFD11911E78379F0092023E /* LaunchScreen.storyboard in Resources */,
 				9CFD118E1E78379F0092023E /* Assets.xcassets in Resources */,
-				9CFD118C1E78379F0092023E /* Main.storyboard in Resources */,
+				55025DCC1FD597510062F788 /* nextuser.plist in Resources */,
+				55025DD11FD5975E0062F788 /* Assets.xcassets in Resources */,
+				55025DD61FD599280062F788 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,9 +347,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NextuserSDKdemo/Pods-NextuserSDKdemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Base64/Base64.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${PODS_ROOT}/KontaktSDK/Cocoapods/iOS/KontaktSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/NextUser/NextUser.framework",
+				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Base64.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KontaktSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NextUser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -322,13 +375,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NextuserSDKdemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CDEE6188A8D37BBC355BC4BD /* [CP] Copy Pods Resources */ = {
@@ -354,8 +410,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CFD11831E78379F0092023E /* AppDelegate.m in Sources */,
+				55025DCE1FD597510062F788 /* Product.m in Sources */,
+				55025DCD1FD597510062F788 /* ProductsTableRowView.m in Sources */,
+				55025DC21FD597490062F788 /* Cart.m in Sources */,
 				9CFD11861E78379F0092023E /* MasterViewController.m in Sources */,
+				55025DC11FD597490062F788 /* CartItemTableRowView.m in Sources */,
+				55025DCF1FD597510062F788 /* UserDataViewController.m in Sources */,
 				9CFD11801E78379F0092023E /* main.m in Sources */,
+				55025DC31FD597490062F788 /* CartViewController.m in Sources */,
+				55025DC41FD597490062F788 /* CartItem.m in Sources */,
 				9CFD11891E78379F0092023E /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,20 +455,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9CFD118A1E78379F0092023E /* Main.storyboard */ = {
+		55025DD41FD599270062F788 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9CFD118B1E78379F0092023E /* Base */,
+				55025DD51FD599270062F788 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9CFD118F1E78379F0092023E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9CFD11901E78379F0092023E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -420,7 +475,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -428,7 +485,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -451,7 +512,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -468,7 +529,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -476,7 +539,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -493,7 +560,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -506,11 +573,15 @@
 			baseConfigurationReference = B069F5A10C9F7AAC4826F685 /* Pods-NextuserSDKdemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = V223KM7TSG;
 				INFOPLIST_FILE = NextuserSDKdemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Nextuser.NextuserSDKdemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextuser.nextuserlibrarydemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "256ff708-07b6-4b33-a7fd-46839f1427d8";
+				PROVISIONING_PROFILE_SPECIFIER = TestappNextUserProfile1;
 			};
 			name = Debug;
 		};
@@ -519,11 +590,15 @@
 			baseConfigurationReference = 4E121326BFA125E81E658DA2 /* Pods-NextuserSDKdemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = V223KM7TSG;
 				INFOPLIST_FILE = NextuserSDKdemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Nextuser.NextuserSDKdemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextuser.nextuserlibrarydemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "256ff708-07b6-4b33-a7fd-46839f1427d8";
+				PROVISIONING_PROFILE_SPECIFIER = TestappNextUserProfile1;
 			};
 			name = Release;
 		};
