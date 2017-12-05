@@ -1,0 +1,6 @@
+[submodule "mobile-sdk-ios"]
+	path = mobile-sdk-ios
+	url = git@github.com:NextUserSF/mobile-sdk-ios.git
+[submodule "NextuserSDKdemo/mobile-sdk-ios"]
+	path = NextuserSDKdemo/mobile-sdk-ios
+	url = git@github.com:NextUserSF/mobile-sdk-ios.git
