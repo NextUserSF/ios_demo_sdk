@@ -20,6 +20,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    [[Nextuser tracker] trackScreenWithName:@"CartScreen"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,11 +80,13 @@
 - (IBAction)checkoutAction:(UIButton *)sender
 {
     [[Cart sharedInstance] checkOut];
+    [[Nextuser tracker] trackEvent:[NUEvent eventWithName:@"_checkout_completed"]];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)cancelAction:(UIButton *)sender
 {
+    [[Nextuser tracker] trackEvent:[NUEvent eventWithName:@"_checkout_canceled"]];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

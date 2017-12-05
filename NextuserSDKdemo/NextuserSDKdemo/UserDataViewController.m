@@ -17,10 +17,12 @@
     if ([[Nextuser tracker] currentUserIdentifier] == nil) {
         [_signInUIView setHidden:NO];
         [_userDataUIView setHidden:YES];
+        [[Nextuser tracker] trackScreenWithName:@"SignUpScreen"];
     } else {
         [_signInUIView setHidden:YES];
         [_userDataUIView setHidden:NO];
         [_userEmail setPlaceholder:[[Nextuser tracker] currentUserIdentifier]];
+        [[Nextuser tracker] trackScreenWithName:@"UserProfileScreen"];
     }
 }
 

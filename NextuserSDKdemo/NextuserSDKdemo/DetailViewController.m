@@ -30,6 +30,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    [[Nextuser tracker] trackScreenWithName:@"DetailScreen"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,13 +60,17 @@
 - (IBAction)addToCartAction:(UIButton *)sender forEvent:(UIEvent *)event
 {
     [[Cart sharedInstance] addItem:_detailItem withQuantity:(NSInteger)_qtyStepper.value];
+    NUEvent *addToCartEvent =  [NUEvent eventWithName:@"add_to_cart"];
+    [addToCartEvent setFirstParameter: _detailItem.name];
+    [addToCartEvent setSecondParameter: [[NSNumber numberWithDouble: _qtyStepper.value] stringValue]];
+    [[Nextuser tracker] trackEvent:addToCartEvent];
     [self.navigationController popViewControllerAnimated: YES];
 }
 
 - (IBAction)handleTapWithRecognizer:(UITapGestureRecognizer *) recognizer
 {
     NUEvent *shareEvent =  [NUEvent eventWithName:@"social_share"];
-    [shareEvent setFirstParameter: _detailItem.identifier];
+    [shareEvent setFirstParameter: _detailItem.name];
     [shareEvent setSecondParameter: recognizer.view.accessibilityIdentifier];
     [[Nextuser tracker] trackEvent:shareEvent];
 }

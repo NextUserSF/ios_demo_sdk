@@ -26,13 +26,16 @@
     [products addObject:[Product generateProduct:@"3" withName:@"Cheese" withPrice:32 withImageResource:@"cheese.jpg" withDescription:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit."]];
     [products addObject:[Product generateProduct:@"4" withName:@"Shoes" withPrice:122 withImageResource:@"shoes.jpg" withDescription:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit."]];
     [products addObject:[Product generateProduct:@"5" withName:@"Vaseline" withPrice:22 withImageResource:@"vaseline.jpg" withDescription:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit."]];
-    //
-    //    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
     [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [[Nextuser tracker] trackScreenWithName:@"HomeScreen"];
 }
 
 
@@ -82,6 +85,15 @@
     cell.productPrice.text = [[[NSNumber numberWithDouble:product.price] stringValue] stringByAppendingString:@"$"];
     
     return cell;
+}
+
+- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Product *product = products[indexPath.row];
+    NUEvent *clickProductEvent = [NUEvent eventWithName:@"_click_product"];
+    [clickProductEvent setFirstParameter:product.name];
+    [[Nextuser tracker] trackEvent: clickProductEvent];
+    return YES;
 }
 
 - (UIImage *)scaleImage:(UIImage *)imageToResize toSize:(CGSize)theNewSize {
