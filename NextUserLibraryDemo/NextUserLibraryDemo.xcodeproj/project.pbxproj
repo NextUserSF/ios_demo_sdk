@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08989B8266A1C384875CD2B7 /* Pods_NextuserSDKdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC0AF7F94FDD101D1568D6 /* Pods_NextuserSDKdemo.framework */; };
 		55025DC11FD597490062F788 /* CartItemTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DBA1FD597480062F788 /* CartItemTableRowView.m */; };
 		55025DC21FD597490062F788 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DBB1FD597480062F788 /* Cart.m */; };
 		55025DC31FD597490062F788 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DBD1FD597490062F788 /* CartViewController.m */; };
@@ -92,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08989B8266A1C384875CD2B7 /* Pods_NextuserSDKdemo.framework in Frameworks */,
 				B5549F9B165DF53012E08D01 /* Pods_NextUserLibraryDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
