@@ -25,6 +25,7 @@
 		9CFD118E1E78379F0092023E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFD118D1E78379F0092023E /* Assets.xcassets */; };
 		9CFD119C1E78379F0092023E /* NextuserSDKdemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD119B1E78379F0092023E /* NextuserSDKdemoTests.m */; };
 		9CFD11A71E78379F0092023E /* NextuserSDKdemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD11A61E78379F0092023E /* NextuserSDKdemoUITests.m */; };
+		B5549F9B165DF53012E08D01 /* Pods_NextUserLibraryDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF49C9363744423FC37ADAE2 /* Pods_NextUserLibraryDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,9 @@
 
 /* Begin PBXFileReference section */
 		20FC0AF7F94FDD101D1568D6 /* Pods_NextuserSDKdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextuserSDKdemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3905236E1EB8FE9D70C7F129 /* Pods-NextUserLibraryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextUserLibraryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4E121326BFA125E81E658DA2 /* Pods-NextuserSDKdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextuserSDKdemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NextuserSDKdemo/Pods-NextuserSDKdemo.release.xcconfig"; sourceTree = "<group>"; };
+		4E71AD473CAD0F164137CDE5 /* Pods-NextUserLibraryDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextUserLibraryDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo.release.xcconfig"; sourceTree = "<group>"; };
 		55025DB91FD597480062F788 /* CartItemTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItemTableRowView.h; sourceTree = "<group>"; };
 		55025DBA1FD597480062F788 /* CartItemTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItemTableRowView.m; sourceTree = "<group>"; };
 		55025DBB1FD597480062F788 /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
@@ -64,7 +67,7 @@
 		55025DCB1FD597510062F788 /* UserDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataViewController.m; sourceTree = "<group>"; };
 		55025DD01FD5975D0062F788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55025DD51FD599270062F788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9CFD117B1E78379F0092023E /* NextuserSDKdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextuserSDKdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFD117B1E78379F0092023E /* NextUserLibraryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextUserLibraryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFD117F1E78379F0092023E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9CFD11811E78379F0092023E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9CFD11821E78379F0092023E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,13 +77,14 @@
 		9CFD11881E78379F0092023E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		9CFD118D1E78379F0092023E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CFD11921E78379F0092023E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CFD11971E78379F0092023E /* NextuserSDKdemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextuserSDKdemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFD11971E78379F0092023E /* NextUserLibraryDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextUserLibraryDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFD119B1E78379F0092023E /* NextuserSDKdemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextuserSDKdemoTests.m; sourceTree = "<group>"; };
 		9CFD119D1E78379F0092023E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CFD11A21E78379F0092023E /* NextuserSDKdemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextuserSDKdemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFD11A21E78379F0092023E /* NextUserLibraryDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextUserLibraryDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFD11A61E78379F0092023E /* NextuserSDKdemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextuserSDKdemoUITests.m; sourceTree = "<group>"; };
 		9CFD11A81E78379F0092023E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B069F5A10C9F7AAC4826F685 /* Pods-NextuserSDKdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextuserSDKdemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NextuserSDKdemo/Pods-NextuserSDKdemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DF49C9363744423FC37ADAE2 /* Pods_NextUserLibraryDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextUserLibraryDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08989B8266A1C384875CD2B7 /* Pods_NextuserSDKdemo.framework in Frameworks */,
+				B5549F9B165DF53012E08D01 /* Pods_NextUserLibraryDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +119,8 @@
 			children = (
 				B069F5A10C9F7AAC4826F685 /* Pods-NextuserSDKdemo.debug.xcconfig */,
 				4E121326BFA125E81E658DA2 /* Pods-NextuserSDKdemo.release.xcconfig */,
+				3905236E1EB8FE9D70C7F129 /* Pods-NextUserLibraryDemo.debug.xcconfig */,
+				4E71AD473CAD0F164137CDE5 /* Pods-NextUserLibraryDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -121,9 +128,9 @@
 		9CFD11721E78379E0092023E = {
 			isa = PBXGroup;
 			children = (
-				9CFD117D1E78379F0092023E /* NextuserSDKdemo */,
-				9CFD119A1E78379F0092023E /* NextuserSDKdemoTests */,
-				9CFD11A51E78379F0092023E /* NextuserSDKdemoUITests */,
+				9CFD117D1E78379F0092023E /* NextUserLibraryDemo */,
+				9CFD119A1E78379F0092023E /* NextUserLibraryDemoTests */,
+				9CFD11A51E78379F0092023E /* NextUserLibraryDemoUITests */,
 				9CFD117C1E78379F0092023E /* Products */,
 				5D73EB7139BE06E319773342 /* Pods */,
 				A1AEB0B434A56BF9938823AC /* Frameworks */,
@@ -133,14 +140,14 @@
 		9CFD117C1E78379F0092023E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CFD117B1E78379F0092023E /* NextuserSDKdemo.app */,
-				9CFD11971E78379F0092023E /* NextuserSDKdemoTests.xctest */,
-				9CFD11A21E78379F0092023E /* NextuserSDKdemoUITests.xctest */,
+				9CFD117B1E78379F0092023E /* NextUserLibraryDemo.app */,
+				9CFD11971E78379F0092023E /* NextUserLibraryDemoTests.xctest */,
+				9CFD11A21E78379F0092023E /* NextUserLibraryDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9CFD117D1E78379F0092023E /* NextuserSDKdemo */ = {
+		9CFD117D1E78379F0092023E /* NextUserLibraryDemo */ = {
 			isa = PBXGroup;
 			children = (
 				55025DD41FD599270062F788 /* Main.storyboard */,
@@ -170,7 +177,7 @@
 				9CFD11921E78379F0092023E /* Info.plist */,
 				9CFD117E1E78379F0092023E /* Supporting Files */,
 			);
-			path = NextuserSDKdemo;
+			path = NextUserLibraryDemo;
 			sourceTree = "<group>";
 		};
 		9CFD117E1E78379F0092023E /* Supporting Files */ = {
@@ -181,28 +188,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9CFD119A1E78379F0092023E /* NextuserSDKdemoTests */ = {
+		9CFD119A1E78379F0092023E /* NextUserLibraryDemoTests */ = {
 			isa = PBXGroup;
 			children = (
 				9CFD119B1E78379F0092023E /* NextuserSDKdemoTests.m */,
 				9CFD119D1E78379F0092023E /* Info.plist */,
 			);
-			path = NextuserSDKdemoTests;
+			path = NextUserLibraryDemoTests;
 			sourceTree = "<group>";
 		};
-		9CFD11A51E78379F0092023E /* NextuserSDKdemoUITests */ = {
+		9CFD11A51E78379F0092023E /* NextUserLibraryDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
 				9CFD11A61E78379F0092023E /* NextuserSDKdemoUITests.m */,
 				9CFD11A81E78379F0092023E /* Info.plist */,
 			);
-			path = NextuserSDKdemoUITests;
+			path = NextUserLibraryDemoUITests;
 			sourceTree = "<group>";
 		};
 		A1AEB0B434A56BF9938823AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				20FC0AF7F94FDD101D1568D6 /* Pods_NextuserSDKdemo.framework */,
+				DF49C9363744423FC37ADAE2 /* Pods_NextUserLibraryDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,9 +218,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9CFD117A1E78379F0092023E /* NextuserSDKdemo */ = {
+		9CFD117A1E78379F0092023E /* NextUserLibraryDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CFD11AB1E78379F0092023E /* Build configuration list for PBXNativeTarget "NextuserSDKdemo" */;
+			buildConfigurationList = 9CFD11AB1E78379F0092023E /* Build configuration list for PBXNativeTarget "NextUserLibraryDemo" */;
 			buildPhases = (
 				B12A9416A33FB3F01635B62A /* [CP] Check Pods Manifest.lock */,
 				9CFD11771E78379F0092023E /* Sources */,
@@ -225,14 +233,14 @@
 			);
 			dependencies = (
 			);
-			name = NextuserSDKdemo;
+			name = NextUserLibraryDemo;
 			productName = NextuserSDKdemo;
-			productReference = 9CFD117B1E78379F0092023E /* NextuserSDKdemo.app */;
+			productReference = 9CFD117B1E78379F0092023E /* NextUserLibraryDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9CFD11961E78379F0092023E /* NextuserSDKdemoTests */ = {
+		9CFD11961E78379F0092023E /* NextUserLibraryDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CFD11AE1E78379F0092023E /* Build configuration list for PBXNativeTarget "NextuserSDKdemoTests" */;
+			buildConfigurationList = 9CFD11AE1E78379F0092023E /* Build configuration list for PBXNativeTarget "NextUserLibraryDemoTests" */;
 			buildPhases = (
 				9CFD11931E78379F0092023E /* Sources */,
 				9CFD11941E78379F0092023E /* Frameworks */,
@@ -243,14 +251,14 @@
 			dependencies = (
 				9CFD11991E78379F0092023E /* PBXTargetDependency */,
 			);
-			name = NextuserSDKdemoTests;
+			name = NextUserLibraryDemoTests;
 			productName = NextuserSDKdemoTests;
-			productReference = 9CFD11971E78379F0092023E /* NextuserSDKdemoTests.xctest */;
+			productReference = 9CFD11971E78379F0092023E /* NextUserLibraryDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9CFD11A11E78379F0092023E /* NextuserSDKdemoUITests */ = {
+		9CFD11A11E78379F0092023E /* NextUserLibraryDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CFD11B11E78379F0092023E /* Build configuration list for PBXNativeTarget "NextuserSDKdemoUITests" */;
+			buildConfigurationList = 9CFD11B11E78379F0092023E /* Build configuration list for PBXNativeTarget "NextUserLibraryDemoUITests" */;
 			buildPhases = (
 				9CFD119E1E78379F0092023E /* Sources */,
 				9CFD119F1E78379F0092023E /* Frameworks */,
@@ -261,9 +269,9 @@
 			dependencies = (
 				9CFD11A41E78379F0092023E /* PBXTargetDependency */,
 			);
-			name = NextuserSDKdemoUITests;
+			name = NextUserLibraryDemoUITests;
 			productName = NextuserSDKdemoUITests;
-			productReference = 9CFD11A21E78379F0092023E /* NextuserSDKdemoUITests.xctest */;
+			productReference = 9CFD11A21E78379F0092023E /* NextUserLibraryDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -292,7 +300,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9CFD11761E78379E0092023E /* Build configuration list for PBXProject "NextuserSDKdemo" */;
+			buildConfigurationList = 9CFD11761E78379E0092023E /* Build configuration list for PBXProject "NextUserLibraryDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -305,9 +313,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9CFD117A1E78379F0092023E /* NextuserSDKdemo */,
-				9CFD11961E78379F0092023E /* NextuserSDKdemoTests */,
-				9CFD11A11E78379F0092023E /* NextuserSDKdemoUITests */,
+				9CFD117A1E78379F0092023E /* NextUserLibraryDemo */,
+				9CFD11961E78379F0092023E /* NextUserLibraryDemoTests */,
+				9CFD11A11E78379F0092023E /* NextUserLibraryDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -347,7 +355,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-NextuserSDKdemo/Pods-NextuserSDKdemo-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Base64/Base64.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
@@ -366,7 +374,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NextuserSDKdemo/Pods-NextuserSDKdemo-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B12A9416A33FB3F01635B62A /* [CP] Check Pods Manifest.lock */ = {
@@ -380,7 +388,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NextuserSDKdemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NextUserLibraryDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -399,7 +407,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NextuserSDKdemo/Pods-NextuserSDKdemo-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -444,12 +452,12 @@
 /* Begin PBXTargetDependency section */
 		9CFD11991E78379F0092023E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9CFD117A1E78379F0092023E /* NextuserSDKdemo */;
+			target = 9CFD117A1E78379F0092023E /* NextUserLibraryDemo */;
 			targetProxy = 9CFD11981E78379F0092023E /* PBXContainerItemProxy */;
 		};
 		9CFD11A41E78379F0092023E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9CFD117A1E78379F0092023E /* NextuserSDKdemo */;
+			target = 9CFD117A1E78379F0092023E /* NextUserLibraryDemo */;
 			targetProxy = 9CFD11A31E78379F0092023E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -570,12 +578,12 @@
 		};
 		9CFD11AC1E78379F0092023E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B069F5A10C9F7AAC4826F685 /* Pods-NextuserSDKdemo.debug.xcconfig */;
+			baseConfigurationReference = 3905236E1EB8FE9D70C7F129 /* Pods-NextUserLibraryDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = V223KM7TSG;
-				INFOPLIST_FILE = NextuserSDKdemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NextUserLibraryDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nextuser.nextuserlibrarydemo;
@@ -587,12 +595,12 @@
 		};
 		9CFD11AD1E78379F0092023E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E121326BFA125E81E658DA2 /* Pods-NextuserSDKdemo.release.xcconfig */;
+			baseConfigurationReference = 4E71AD473CAD0F164137CDE5 /* Pods-NextUserLibraryDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = V223KM7TSG;
-				INFOPLIST_FILE = NextuserSDKdemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NextUserLibraryDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nextuser.nextuserlibrarydemo;
@@ -610,7 +618,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Nextuser.NextuserSDKdemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextuserSDKdemo.app/NextuserSDKdemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextUserLibraryDemo.app/NextUserLibraryDemo";
 			};
 			name = Debug;
 		};
@@ -622,7 +630,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Nextuser.NextuserSDKdemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextuserSDKdemo.app/NextuserSDKdemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextUserLibraryDemo.app/NextUserLibraryDemo";
 			};
 			name = Release;
 		};
@@ -651,7 +659,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9CFD11761E78379E0092023E /* Build configuration list for PBXProject "NextuserSDKdemo" */ = {
+		9CFD11761E78379E0092023E /* Build configuration list for PBXProject "NextUserLibraryDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CFD11A91E78379F0092023E /* Debug */,
@@ -660,7 +668,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CFD11AB1E78379F0092023E /* Build configuration list for PBXNativeTarget "NextuserSDKdemo" */ = {
+		9CFD11AB1E78379F0092023E /* Build configuration list for PBXNativeTarget "NextUserLibraryDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CFD11AC1E78379F0092023E /* Debug */,
@@ -669,7 +677,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CFD11AE1E78379F0092023E /* Build configuration list for PBXNativeTarget "NextuserSDKdemoTests" */ = {
+		9CFD11AE1E78379F0092023E /* Build configuration list for PBXNativeTarget "NextUserLibraryDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CFD11AF1E78379F0092023E /* Debug */,
@@ -678,7 +686,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CFD11B11E78379F0092023E /* Build configuration list for PBXNativeTarget "NextuserSDKdemoUITests" */ = {
+		9CFD11B11E78379F0092023E /* Build configuration list for PBXNativeTarget "NextUserLibraryDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CFD11B21E78379F0092023E /* Debug */,

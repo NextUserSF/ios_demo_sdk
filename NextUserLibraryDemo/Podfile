@@ -4,7 +4,7 @@ use_frameworks!
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/NextUserSF/NextUserPodSpecs.git'
 
-target 'NextuserSDKdemo' do
+target 'NextUserLibraryDemo' do
     pod 'KontaktSDK', '~> 1.0'
     pod 'NextUser', '~> 1.0.4'
 end
