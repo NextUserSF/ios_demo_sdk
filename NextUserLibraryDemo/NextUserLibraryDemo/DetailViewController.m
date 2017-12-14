@@ -1,17 +1,7 @@
-//
-//  DetailViewController.m
-//  NextuserSDKdemo
-//
-//  Created by Marin Bek on 14/03/2017.
-//  Copyright © 2017 Marin Bek. All rights reserved.
-//
-
 #import "DetailViewController.h"
 
-@interface DetailViewController ()
 
-@end
-
+@import NextUser;
 @implementation DetailViewController
 
 
@@ -30,7 +20,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [[Nextuser tracker] trackScreenWithName:@"DetailScreen"];
+    [[NextUser tracker] trackScreenWithName:@"DetailScreen"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,7 +53,7 @@
     NUEvent *addToCartEvent =  [NUEvent eventWithName:@"add_to_cart"];
     [addToCartEvent setFirstParameter: _detailItem.name];
     [addToCartEvent setSecondParameter: [[NSNumber numberWithDouble: _qtyStepper.value] stringValue]];
-    [[Nextuser tracker] trackEvent:addToCartEvent];
+    [[NextUser tracker] trackEvent:addToCartEvent];
     [self.navigationController popViewControllerAnimated: YES];
 }
 
@@ -72,7 +62,7 @@
     NUEvent *shareEvent =  [NUEvent eventWithName:@"social_share"];
     [shareEvent setFirstParameter: _detailItem.name];
     [shareEvent setSecondParameter: recognizer.view.accessibilityIdentifier];
-    [[Nextuser tracker] trackEvent:shareEvent];
+    [[NextUser tracker] trackEvent:shareEvent];
 }
 
 @end

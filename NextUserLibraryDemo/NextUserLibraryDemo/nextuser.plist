@@ -6,7 +6,5 @@
 	<string>internal_tests</string>
 	<key>log_level</key>
 	<string>VERBOSE</string>
-	<key>production_release</key>
-	<false/>
 </dict>
 </plist>

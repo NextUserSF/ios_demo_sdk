@@ -9,20 +9,21 @@
 #import <Foundation/Foundation.h>
 #import "UserDataViewController.h"
 
+@import NextUser;
 @implementation UserDataViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    if ([[Nextuser tracker] currentUserIdentifier] == nil) {
+    if ([[NextUser tracker] currentUserIdentifier] == nil) {
         [_signInUIView setHidden:NO];
         [_userDataUIView setHidden:YES];
-        [[Nextuser tracker] trackScreenWithName:@"SignUpScreen"];
+        [[NextUser tracker] trackScreenWithName:@"SignUpScreen"];
     } else {
         [_signInUIView setHidden:YES];
         [_userDataUIView setHidden:NO];
-        [_userEmail setPlaceholder:[[Nextuser tracker] currentUserIdentifier]];
-        [[Nextuser tracker] trackScreenWithName:@"UserProfileScreen"];
+        [_userEmail setPlaceholder:[[NextUser tracker] currentUserIdentifier]];
+        [[NextUser tracker] trackScreenWithName:@"UserProfileScreen"];
     }
 }
 
@@ -42,7 +43,7 @@
     if (email != nil) {
         NUUser *user = [[NUUser alloc] init];
         user.email = email;
-        [[Nextuser tracker] trackUser:user];
+        [[NextUser tracker] trackUser:user];
     }
     [self cancelAction];
 }
@@ -50,7 +51,7 @@
 - (IBAction)submitAction:(UIButton *)sender
 {
     NUUser *user = [[NUUser alloc] init];
-    user.email = [[Nextuser tracker] currentUserIdentifier];
+    user.email = [[NextUser tracker] currentUserIdentifier];
     user.customerID = _customerID.text;
     user.firstname = _firstName.text;
     user.lastname = _lastName.text;
@@ -58,7 +59,7 @@
     user.gender = _gender.selectedSegmentIndex == 0 ? MALE : FEMALE;
     [user addVariable:_varOneName.text withValue:_varOneValue.text];
     [user addVariable:_varTwoName.text withValue:_varTwoValue.text];
-    [[Nextuser tracker] trackUser:user];
+    [[NextUser tracker] trackUser:user];
     [self cancelAction];
 }
 

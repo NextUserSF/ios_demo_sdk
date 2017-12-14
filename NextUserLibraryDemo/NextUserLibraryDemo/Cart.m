@@ -1,8 +1,6 @@
-#import <Foundation/Foundation.h>
 #import "Cart.h"
 
 @import NextUser;
-
 @implementation Cart
 
 + (instancetype) sharedInstance
@@ -71,7 +69,7 @@
     }
     
     NUPurchase *purchase = [NUPurchase purchaseWithTotalAmount:total items:purchaseItems];
-    [[Nextuser tracker] trackPurchase:purchase];
+    [[NextUser tracker] trackPurchase:purchase];
 }
 
 -(NUPurchaseItem *) toTrackerPurchaseItem:(CartItem *) item

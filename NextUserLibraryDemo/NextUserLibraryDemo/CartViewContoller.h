@@ -9,8 +9,6 @@
 #import "Cart.h"
 #import "CartItemTableRowView.h"
 
-@import NextUser;
-
 @interface CartViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *cartItemsTableView;

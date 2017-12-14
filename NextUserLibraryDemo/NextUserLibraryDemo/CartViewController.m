@@ -1,14 +1,6 @@
-//
-//  CartViewController.m
-//  NextuserSDKdemo
-//
-//  Created by Adrian Lazea on 22/11/2017.
-//  Copyright © 2017 Marin Bek. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
 #import "CartViewContoller.h"
 
+@import NextUser;
 @implementation CartViewController
 @synthesize cartItemsTableView;
 
@@ -20,7 +12,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [[Nextuser tracker] trackScreenWithName:@"CartScreen"];
+    [[NextUser tracker] trackScreenWithName:@"CartScreen"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,13 +72,13 @@
 - (IBAction)checkoutAction:(UIButton *)sender
 {
     [[Cart sharedInstance] checkOut];
-    [[Nextuser tracker] trackEvent:[NUEvent eventWithName:@"_checkout_completed"]];
+    [[NextUser tracker] trackEvent:[NUEvent eventWithName:@"_checkout_completed"]];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)cancelAction:(UIButton *)sender
 {
-    [[Nextuser tracker] trackEvent:[NUEvent eventWithName:@"_checkout_canceled"]];
+    [[NextUser tracker] trackEvent:[NUEvent eventWithName:@"_checkout_canceled"]];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

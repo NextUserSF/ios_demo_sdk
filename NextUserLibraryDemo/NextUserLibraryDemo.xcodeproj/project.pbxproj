@@ -15,8 +15,8 @@
 		55025DCD1FD597510062F788 /* ProductsTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DC71FD597500062F788 /* ProductsTableRowView.m */; };
 		55025DCE1FD597510062F788 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DCA1FD597500062F788 /* Product.m */; };
 		55025DCF1FD597510062F788 /* UserDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DCB1FD597510062F788 /* UserDataViewController.m */; };
-		55025DD11FD5975E0062F788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55025DD01FD5975D0062F788 /* Assets.xcassets */; };
 		55025DD61FD599280062F788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55025DD41FD599270062F788 /* Main.storyboard */; };
+		8DA54F05D501E74EAAA45025 /* Pods_NextUserLibraryDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6470FB64AC2A7AC1D2B8B609 /* Pods_NextUserLibraryDemo.framework */; };
 		9CFD11801E78379F0092023E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD117F1E78379F0092023E /* main.m */; };
 		9CFD11831E78379F0092023E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD11821E78379F0092023E /* AppDelegate.m */; };
 		9CFD11861E78379F0092023E /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD11851E78379F0092023E /* MasterViewController.m */; };
@@ -24,7 +24,6 @@
 		9CFD118E1E78379F0092023E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFD118D1E78379F0092023E /* Assets.xcassets */; };
 		9CFD119C1E78379F0092023E /* NextuserSDKdemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD119B1E78379F0092023E /* NextuserSDKdemoTests.m */; };
 		9CFD11A71E78379F0092023E /* NextuserSDKdemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD11A61E78379F0092023E /* NextuserSDKdemoUITests.m */; };
-		B5549F9B165DF53012E08D01 /* Pods_NextUserLibraryDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF49C9363744423FC37ADAE2 /* Pods_NextUserLibraryDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20FC0AF7F94FDD101D1568D6 /* Pods_NextuserSDKdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextuserSDKdemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3905236E1EB8FE9D70C7F129 /* Pods-NextUserLibraryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextUserLibraryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		4E121326BFA125E81E658DA2 /* Pods-NextuserSDKdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextuserSDKdemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NextuserSDKdemo/Pods-NextuserSDKdemo.release.xcconfig"; sourceTree = "<group>"; };
 		4E71AD473CAD0F164137CDE5 /* Pods-NextUserLibraryDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextUserLibraryDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo.release.xcconfig"; sourceTree = "<group>"; };
 		55025DB91FD597480062F788 /* CartItemTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItemTableRowView.h; sourceTree = "<group>"; };
 		55025DBA1FD597480062F788 /* CartItemTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItemTableRowView.m; sourceTree = "<group>"; };
@@ -66,6 +63,7 @@
 		55025DCB1FD597510062F788 /* UserDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataViewController.m; sourceTree = "<group>"; };
 		55025DD01FD5975D0062F788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55025DD51FD599270062F788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6470FB64AC2A7AC1D2B8B609 /* Pods_NextUserLibraryDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextUserLibraryDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFD117B1E78379F0092023E /* NextUserLibraryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextUserLibraryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFD117F1E78379F0092023E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9CFD11811E78379F0092023E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,8 +80,6 @@
 		9CFD11A21E78379F0092023E /* NextUserLibraryDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextUserLibraryDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFD11A61E78379F0092023E /* NextuserSDKdemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextuserSDKdemoUITests.m; sourceTree = "<group>"; };
 		9CFD11A81E78379F0092023E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B069F5A10C9F7AAC4826F685 /* Pods-NextuserSDKdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextuserSDKdemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NextuserSDKdemo/Pods-NextuserSDKdemo.debug.xcconfig"; sourceTree = "<group>"; };
-		DF49C9363744423FC37ADAE2 /* Pods_NextUserLibraryDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextUserLibraryDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5549F9B165DF53012E08D01 /* Pods_NextUserLibraryDemo.framework in Frameworks */,
+				8DA54F05D501E74EAAA45025 /* Pods_NextUserLibraryDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,8 +111,6 @@
 		5D73EB7139BE06E319773342 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B069F5A10C9F7AAC4826F685 /* Pods-NextuserSDKdemo.debug.xcconfig */,
-				4E121326BFA125E81E658DA2 /* Pods-NextuserSDKdemo.release.xcconfig */,
 				3905236E1EB8FE9D70C7F129 /* Pods-NextUserLibraryDemo.debug.xcconfig */,
 				4E71AD473CAD0F164137CDE5 /* Pods-NextUserLibraryDemo.release.xcconfig */,
 			);
@@ -207,8 +201,7 @@
 		A1AEB0B434A56BF9938823AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				20FC0AF7F94FDD101D1568D6 /* Pods_NextuserSDKdemo.framework */,
-				DF49C9363744423FC37ADAE2 /* Pods_NextUserLibraryDemo.framework */,
+				6470FB64AC2A7AC1D2B8B609 /* Pods_NextUserLibraryDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -325,7 +318,6 @@
 			files = (
 				9CFD118E1E78379F0092023E /* Assets.xcassets in Resources */,
 				55025DCC1FD597510062F788 /* nextuser.plist in Resources */,
-				55025DD11FD5975E0062F788 /* Assets.xcassets in Resources */,
 				55025DD61FD599280062F788 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,21 +346,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/Base64/Base64.framework",
-				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${PODS_ROOT}/KontaktSDK/Cocoapods/iOS/KontaktSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/NextUser/NextUser.framework",
-				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Base64.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KontaktSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NextUser.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -399,9 +381,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/NextUser/NextUser.bundle",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

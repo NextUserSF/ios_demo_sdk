@@ -1,5 +1,6 @@
 #import "MasterViewController.h"
 
+@import NextUser;
 @interface MasterViewController ()
 {
     NSMutableArray<Product *> *products;
@@ -35,7 +36,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [[Nextuser tracker] trackScreenWithName:@"HomeScreen"];
+    [[NextUser tracker] trackScreenWithName:@"HomeScreen"];
 }
 
 
@@ -92,7 +93,7 @@
     Product *product = products[indexPath.row];
     NUEvent *clickProductEvent = [NUEvent eventWithName:@"_click_product"];
     [clickProductEvent setFirstParameter:product.name];
-    [[Nextuser tracker] trackEvent: clickProductEvent];
+    [[NextUser tracker] trackEvent: clickProductEvent];
     return YES;
 }
 

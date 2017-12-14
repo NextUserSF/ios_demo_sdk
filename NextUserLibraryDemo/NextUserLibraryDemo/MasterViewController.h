@@ -11,7 +11,6 @@
 #import "Product.h"
 #import "ProductsTableRowView.h"
 
-@import NextUser;
 @class DetailViewController;
 
 @interface MasterViewController : UITableViewController

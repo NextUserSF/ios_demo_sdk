@@ -10,8 +10,6 @@
 #import "Product.h"
 #import "Cart.h"
 
-@import NextUser;
-
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) Product *detailItem;

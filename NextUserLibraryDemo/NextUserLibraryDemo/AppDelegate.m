@@ -7,13 +7,14 @@
 //
 
 #import "AppDelegate.h"
+@import NextUser;
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NUTracker *tracker = [Nextuser tracker];
+    NUTracker *tracker = [NextUser tracker];
     [tracker initializeWithApplication:application withLaunchOptions:launchOptions];
     return YES;
 }
