@@ -1,15 +1,61 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - Base64 (1.1.2)
+  - CocoaLumberjack (3.6.2):
+    - CocoaLumberjack/Core (= 3.6.2)
+  - CocoaLumberjack/Core (3.6.2)
   - KontaktSDK (1.5.1)
-  - NextUser (1.1.0)
+  - NextUser (1.0.5):
+    - AFNetworking (~> 3.0)
+    - Base64
+    - CocoaLumberjack
+    - NextUser/Production (= 1.0.5)
+    - SAMKeychain
+  - NextUser/Production (1.0.5):
+    - AFNetworking (~> 3.0)
+    - Base64
+    - CocoaLumberjack
+    - SAMKeychain
+  - SAMKeychain (1.5.3)
 
 DEPENDENCIES:
   - KontaktSDK (~> 1.0)
-  - NextUser (~> 1.1.0)
+  - NextUser (from `/Users/adrian/Dev/NextUser/mobile-sdk-ios`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - Base64
+    - CocoaLumberjack
+    - KontaktSDK
+    - SAMKeychain
+
+EXTERNAL SOURCES:
+  NextUser:
+    :path: "/Users/adrian/Dev/NextUser/mobile-sdk-ios"
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
+  CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
   KontaktSDK: 68cc25fd7fbab5b03b1c86db440620e55b031580
-  NextUser: f473da4a15fd9990b2f21be78e1025eb76ae640e
+  NextUser: 82640bfc80392cca3af30ee6e59a6b4c15cbf1fb
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
 
-PODFILE CHECKSUM: a9fdc995daaba08b06157632320c5ebf2123d1a0
+PODFILE CHECKSUM: 8039f63a07318682c3b8ded1917f04778b406cfe
 
-COCOAPODS: 1.4.0.beta.2
+COCOAPODS: 1.11.2

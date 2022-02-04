@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A492A3127AD238B00C61FFE /* mobile-sdk-ios in Resources */ = {isa = PBXBuildFile; fileRef = 3A492A3027AD238B00C61FFE /* mobile-sdk-ios */; };
+		3A492A3327AD2BBA00C61FFE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3A492A3227AD2BBA00C61FFE /* Podfile */; };
 		55025DC11FD597490062F788 /* CartItemTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DBA1FD597480062F788 /* CartItemTableRowView.m */; };
 		55025DC21FD597490062F788 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DBB1FD597480062F788 /* Cart.m */; };
 		55025DC31FD597490062F788 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DBD1FD597490062F788 /* CartViewController.m */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		3905236E1EB8FE9D70C7F129 /* Pods-NextUserLibraryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextUserLibraryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3A492A3027AD238B00C61FFE /* mobile-sdk-ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "mobile-sdk-ios"; path = "../../mobile-sdk-ios"; sourceTree = "<group>"; };
+		3A492A3227AD2BBA00C61FFE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		4E71AD473CAD0F164137CDE5 /* Pods-NextUserLibraryDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextUserLibraryDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo.release.xcconfig"; sourceTree = "<group>"; };
 		55025DB91FD597480062F788 /* CartItemTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItemTableRowView.h; sourceTree = "<group>"; };
 		55025DBA1FD597480062F788 /* CartItemTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItemTableRowView.m; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 		9CFD11721E78379E0092023E = {
 			isa = PBXGroup;
 			children = (
+				3A492A3227AD2BBA00C61FFE /* Podfile */,
+				3A492A3027AD238B00C61FFE /* mobile-sdk-ios */,
 				9CFD117D1E78379F0092023E /* NextUserLibraryDemo */,
 				9CFD119A1E78379F0092023E /* NextUserLibraryDemoTests */,
 				9CFD11A51E78379F0092023E /* NextUserLibraryDemoUITests */,
@@ -218,7 +224,6 @@
 				9CFD11781E78379F0092023E /* Frameworks */,
 				9CFD11791E78379F0092023E /* Resources */,
 				55EA6A8D33F4745FCBF62CEE /* [CP] Embed Pods Frameworks */,
-				CDEE6188A8D37BBC355BC4BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,6 +301,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -316,7 +322,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A492A3327AD2BBA00C61FFE /* Podfile in Resources */,
 				9CFD118E1E78379F0092023E /* Assets.xcassets in Resources */,
+				3A492A3127AD238B00C61FFE /* mobile-sdk-ios in Resources */,
 				55025DCC1FD597510062F788 /* nextuser.plist in Resources */,
 				55025DD61FD599280062F788 /* Main.storyboard in Resources */,
 			);
@@ -345,16 +353,26 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Base64/Base64.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${PODS_ROOT}/KontaktSDK/Cocoapods/iOS/KontaktSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/NextUser/NextUser.framework",
+				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Base64.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KontaktSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NextUser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B12A9416A33FB3F01635B62A /* [CP] Check Pods Manifest.lock */ = {
@@ -373,25 +391,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CDEE6188A8D37BBC355BC4BD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/NextUser/NextUser.bundle",
-				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -568,7 +567,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = V223KM7TSG;
 				INFOPLIST_FILE = "$(SRCROOT)/NextUserLibraryDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nextuser.nextuserlibrarydemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -585,7 +584,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = V223KM7TSG;
 				INFOPLIST_FILE = "$(SRCROOT)/NextUserLibraryDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nextuser.nextuserlibrarydemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
