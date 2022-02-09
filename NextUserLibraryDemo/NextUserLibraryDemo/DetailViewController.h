@@ -20,6 +20,8 @@
 @property (strong, nonatomic) IBOutlet UIStepper *qtyStepper;
 @property (strong, nonatomic) IBOutlet UIButton *cartButton;
 @property (strong, nonatomic) IBOutlet UILabel *productDescription;
+@property (weak, nonatomic) IBOutlet UILabel *totalLabel;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 - (IBAction)changeQtyAction:(UIStepper *)sender forEvent:(UIEvent *)event;
 - (IBAction)addToCartAction:(UIButton *)sender forEvent:(UIEvent *)event;

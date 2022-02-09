@@ -7,9 +7,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     _productName.text = _detailItem.name;
     _productImage.image = [UIImage imageNamed:_detailItem.imageResource];
     _productDescription.text = _detailItem.prodDescription;
+    _productName.textColor = UIColor.blackColor;
+    _selectedQtyLabel.textColor = UIColor.blackColor;
+    _currentTotalLabel.textColor = UIColor.blackColor;
+    _productDescription.textColor = UIColor.blackColor;
+    _totalLabel.textColor = UIColor.blackColor;
+    _descriptionLabel.textColor = UIColor.blackColor;
     double currentQty = [[Cart sharedInstance] qtyForProduct:_detailItem];
     if (currentQty != 0) {
         [self changeUIForQty: currentQty];
@@ -21,6 +28,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [[NextUser tracker] trackScreenWithName:@"DetailScreen"];
+    [[NextUser cartManager] viewedProduct:_detailItem.identifier];
 }
 
 - (void)didReceiveMemoryWarning {

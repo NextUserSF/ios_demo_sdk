@@ -95,6 +95,7 @@
     NUEvent *clickProductEvent = [NUEvent eventWithName:@"_click_product"];
     [clickProductEvent setFirstParameter:product.name];
     [[NextUser tracker] trackEvent: clickProductEvent];
+    
     return YES;
 }
 

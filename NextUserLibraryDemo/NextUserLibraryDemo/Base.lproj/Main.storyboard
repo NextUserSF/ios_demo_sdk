@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZBY-XM-qpl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZBY-XM-qpl">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -196,7 +196,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" rowHeight="45" id="Pbo-1g-eq6" customClass="ProductsTableRowView">
-                                <rect key="frame" x="0.0" y="28" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="24.5" width="375" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pbo-1g-eq6" id="SuD-4i-tCR">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
@@ -301,7 +301,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRJ-Dy-myi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRJ-Dy-myi" userLabel="Total:">
                                 <rect key="frame" x="203" y="177" width="42" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
@@ -418,11 +418,13 @@
                     <connections>
                         <outlet property="cartButton" destination="RKD-Ou-YN9" id="0cZ-RV-8ys"/>
                         <outlet property="currentTotalLabel" destination="YKM-nh-V5K" id="LeT-DW-A9U"/>
+                        <outlet property="descriptionLabel" destination="wsO-hk-lzx" id="hCn-I4-TCp"/>
                         <outlet property="productDescription" destination="je3-hZ-to3" id="ntY-dK-Aif"/>
                         <outlet property="productImage" destination="b5X-jw-I17" id="6OJ-oA-PIg"/>
                         <outlet property="productName" destination="eFm-d3-4rh" id="aCe-r7-FVc"/>
                         <outlet property="qtyStepper" destination="CvL-x2-ktg" id="Zlt-ft-nkS"/>
                         <outlet property="selectedQtyLabel" destination="qm2-KJ-6TX" id="uE2-9Y-jhZ"/>
+                        <outlet property="totalLabel" destination="VRJ-Dy-myi" id="WY1-wv-bYT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1FX-Ih-qNv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -481,7 +483,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartCell" id="CJv-qI-hW0" customClass="CartItemTableRowView">
-                                                <rect key="frame" x="0.0" y="28" width="279" height="43.5"/>
+                                                <rect key="frame" x="0.0" y="24.5" width="279" height="43.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CJv-qI-hW0" id="LPd-J9-wQr">
                                                     <rect key="frame" x="0.0" y="0.0" width="279" height="43.5"/>

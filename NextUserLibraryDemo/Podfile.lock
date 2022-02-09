@@ -1,22 +1,4 @@
 PODS:
-  - AFNetworking (4.0.1):
-    - AFNetworking/NSURLSession (= 4.0.1)
-    - AFNetworking/Reachability (= 4.0.1)
-    - AFNetworking/Security (= 4.0.1)
-    - AFNetworking/Serialization (= 4.0.1)
-    - AFNetworking/UIKit (= 4.0.1)
-  - AFNetworking/NSURLSession (4.0.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (4.0.1)
-  - AFNetworking/Security (4.0.1)
-  - AFNetworking/Serialization (4.0.1)
-  - AFNetworking/UIKit (4.0.1):
-    - AFNetworking/NSURLSession
-  - CocoaLumberjack (3.7.4):
-    - CocoaLumberjack/Core (= 3.7.4)
-  - CocoaLumberjack/Core (3.7.4)
   - Firebase/Core (8.11.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (~> 8.11.0)
@@ -114,20 +96,16 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
-  - NextUser (2.0.2):
-    - AFNetworking
-    - CocoaLumberjack
+  - NextUser (2.0.2)
   - PromisesObjC (2.0.0)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Messaging
-  - NextUser (from `/Users/adrian/Dev/NextUser/mobile-sdk-ios`)
+  - NextUser
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - AFNetworking
-    - CocoaLumberjack
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -139,14 +117,10 @@ SPEC REPOS:
     - GoogleUtilities
     - nanopb
     - PromisesObjC
-
-EXTERNAL SOURCES:
-  NextUser:
-    :path: "/Users/adrian/Dev/NextUser/mobile-sdk-ios"
+  https://github.com/NextUserSF/NextUserPodSpecs.git:
+    - NextUser
 
 SPEC CHECKSUMS:
-  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
   Firebase: 44dd9724c84df18b486639e874f31436eaa9a20c
   FirebaseAnalytics: 4e4b13031034e6561ed3bd1d47b6fdabbd6487c6
   FirebaseCore: 2f4f85b453cc8fea4bb2b37e370007d2bcafe3f0
@@ -157,9 +131,9 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  NextUser: d0bfef27fdfd3460b7ce70e7c75d593987df4ece
+  NextUser: cf109ea6631e2e684aa4324cdfba92082d814e77
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
 
-PODFILE CHECKSUM: 514e7af8c226e7afdf2c3154f0ce53d85311d980
+PODFILE CHECKSUM: ea90d4e323196aff1edbdc238416f4c4eaeff8a2
 
 COCOAPODS: 1.11.2

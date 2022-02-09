@@ -6,7 +6,7 @@ source 'https://github.com/NextUserSF/NextUserPodSpecs.git'
 
 
 target 'NextUserLibraryDemo' do
-    pod 'NextUser', :path => '/Users/adrian/Dev/NextUser/mobile-sdk-ios'
+    pod 'NextUser'
     pod 'Firebase/Core'
     pod 'Firebase/Messaging'
 end
