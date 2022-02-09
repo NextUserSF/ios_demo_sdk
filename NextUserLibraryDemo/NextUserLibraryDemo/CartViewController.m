@@ -71,6 +71,49 @@
 
 - (IBAction)checkoutAction:(UIButton *)sender
 {
+    
+//    NUWebViewSettings *settings = [[NUWebViewSettings alloc] init];
+//    settings.url = @"https://tienda.sonepar.es/tienda/#/home";
+//    settings.firstLoadJs = @"console.log(\" FIRST LOAD JS CODE \"); var closeDataObj ={}; closeDataObj.user='Adrian'; setTimeout(function(){ nuBridge.sendData({'data':JSON.stringify(closeDataObj), 'event':'first_load_test_event', 'parameters':['1','2','3']}); }, 3000);";
+//    
+//    NUCustomJSCode *customjscode1 = [[NUCustomJSCode alloc] init];
+//    customjscode1.pageURL = @"https://tienda.sonepar.es/tienda/#/catalogo";
+//    customjscode1.jsCodeString = @"console.log(' PAGE URL equals: https://tienda.sonepar.es/tienda/#/catalogo'); nuBridge.executeUrl('nextuser://reload'); ";
+//    customjscode1.condition = (NUCondition) EQUALS;
+//    
+//    
+//    NUCustomJSCode *customjscode2 = [[NUCustomJSCode alloc] init];
+//    customjscode2.pageURL = @"compraAsegurada";
+//    customjscode2.jsCodeString = @"console.log(' PAGE URL contains: compraAsegurada'); nuBridge.triggerReload({'event':'reload_triggered_test_event', 'parameters':['11','22','33']});";
+//    customjscode2.condition = (NUCondition) CONTAINS;
+//    
+//    
+//    NUCustomJSCode *customjscode3 = [[NUCustomJSCode alloc] init];
+//    customjscode3.pageURL = @"https://tienda.sonepar.es/tienda/#/producto";
+//    customjscode3.jsCodeString = @"console.log(' PAGE URL starts with: https://tienda.sonepar.es/tienda/#/producto'); nuBridge.triggerClose({'event':'close_test_event', 'parameters':['111','222','333']});";
+//    customjscode3.condition = (NUCondition) STARTS_WITH;
+//    
+//    NSMutableArray *customeJsCodes = [NSMutableArray arrayWithCapacity:3];
+//    [customeJsCodes addObject:customjscode1];
+//    [customeJsCodes addObject:customjscode2];
+//    [customeJsCodes addObject:customjscode3];
+//    
+//    settings.customJSCodes = customeJsCodes;
+//    settings.enableNavigation = YES;
+//    settings.suppressBrowserJSAlerts = YES;
+//    
+// 
+//    [[NextUser UIDisplayManager] showWebView:settings withDelegate:self withCompletion: ^(BOOL success, NSError *error) {
+//        
+//        if (success ==YES) {
+//            NSLog(@" sucess!!");
+//        } else {
+//            NSLog(@" error %@: ", error.localizedDescription);
+//        }
+//        
+//    }];
+    
+    
     [[Cart sharedInstance] checkOut];
     [[NextUser tracker] trackEvent:[NUEvent eventWithName:@"_checkout_completed"]];
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -81,4 +124,30 @@
     [[NextUser tracker] trackEvent:[NUEvent eventWithName:@"_checkout_canceled"]];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (void)onWebViewClose:(NSObject *)dataObject {
+    NSLog(@" ON WEB VIEW CLOSE %@: ", dataObject);
+}
+
+- (void)onWebViewData:(NSObject *)dataObject {
+    NSLog(@" ON WEB VIEW DATA %@: ", dataObject);
+}
+
+- (void)webViewContainer:(UIView *)view didFailToLoadURL:(NSURL *)URL error:(NSError *)error {
+    NSLog(@" ON WEB VIEW FAIL TO LOAD %@: ", error.localizedDescription);
+}
+
+- (void)webViewContainer:(UIView *)view didFinishLoadingURL:(NSURL *)URL {
+    NSLog(@" ON WEB VIEW FINISHED LOADING %@: ", URL.absoluteURL);
+}
+
+- (void)webViewContainer:(UIView *)view didStartLoadingURL:(NSURL *)URL {
+    NSLog(@" ON WEB VIEW START LOADING %@: ", URL.absoluteURL);
+}
+
+- (void)onWebViewPageLoadingProgress:(double)progress {
+    NSLog(@" ON WEB VIEW PAGE LOADING PROGRESS %f: ", progress);
+}
+
+
 @end

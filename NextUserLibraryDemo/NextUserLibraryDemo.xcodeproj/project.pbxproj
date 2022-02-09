@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A492A3127AD238B00C61FFE /* mobile-sdk-ios in Resources */ = {isa = PBXBuildFile; fileRef = 3A492A3027AD238B00C61FFE /* mobile-sdk-ios */; };
 		3A492A3327AD2BBA00C61FFE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3A492A3227AD2BBA00C61FFE /* Podfile */; };
+		3A5F4B5D27B3E161001F99BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A5F4B5C27B3E161001F99BC /* GoogleService-Info.plist */; };
 		55025DC11FD597490062F788 /* CartItemTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DBA1FD597480062F788 /* CartItemTableRowView.m */; };
 		55025DC21FD597490062F788 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DBB1FD597480062F788 /* Cart.m */; };
 		55025DC31FD597490062F788 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55025DBD1FD597490062F788 /* CartViewController.m */; };
@@ -49,6 +50,7 @@
 		3905236E1EB8FE9D70C7F129 /* Pods-NextUserLibraryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextUserLibraryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		3A492A3027AD238B00C61FFE /* mobile-sdk-ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "mobile-sdk-ios"; path = "../../mobile-sdk-ios"; sourceTree = "<group>"; };
 		3A492A3227AD2BBA00C61FFE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		3A5F4B5C27B3E161001F99BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "NextUserLibraryDemo/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4E71AD473CAD0F164137CDE5 /* Pods-NextUserLibraryDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextUserLibraryDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo.release.xcconfig"; sourceTree = "<group>"; };
 		55025DB91FD597480062F788 /* CartItemTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItemTableRowView.h; sourceTree = "<group>"; };
 		55025DBA1FD597480062F788 /* CartItemTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItemTableRowView.m; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		9CFD11721E78379E0092023E = {
 			isa = PBXGroup;
 			children = (
+				3A5F4B5C27B3E161001F99BC /* GoogleService-Info.plist */,
 				3A492A3227AD2BBA00C61FFE /* Podfile */,
 				3A492A3027AD238B00C61FFE /* mobile-sdk-ios */,
 				9CFD117D1E78379F0092023E /* NextUserLibraryDemo */,
@@ -327,6 +330,7 @@
 				3A492A3127AD238B00C61FFE /* mobile-sdk-ios in Resources */,
 				55025DCC1FD597510062F788 /* nextuser.plist in Resources */,
 				55025DD61FD599280062F788 /* Main.storyboard in Resources */,
+				3A5F4B5D27B3E161001F99BC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,20 +359,30 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NextUserLibraryDemo/Pods-NextUserLibraryDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/Base64/Base64.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
-				"${PODS_ROOT}/KontaktSDK/Cocoapods/iOS/KontaktSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseMessaging/FirebaseMessaging.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/NextUser/NextUser.framework",
-				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Base64.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KontaktSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreDiagnostics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseMessaging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NextUser.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -503,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -551,7 +565,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -565,14 +579,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = V223KM7TSG;
 				INFOPLIST_FILE = "$(SRCROOT)/NextUserLibraryDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nextuser.nextuserlibrarydemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "256ff708-07b6-4b33-a7fd-46839f1427d8";
-				PROVISIONING_PROFILE_SPECIFIER = TestappNextUserProfile1;
+				PROVISIONING_PROFILE_SPECIFIER = TestAppNextUser3;
 			};
 			name = Debug;
 		};
@@ -582,14 +598,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = V223KM7TSG;
 				INFOPLIST_FILE = "$(SRCROOT)/NextUserLibraryDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nextuser.nextuserlibrarydemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "256ff708-07b6-4b33-a7fd-46839f1427d8";
-				PROVISIONING_PROFILE_SPECIFIER = TestappNextUserProfile1;
+				PROVISIONING_PROFILE_SPECIFIER = TestAppNextUser3;
 			};
 			name = Release;
 		};

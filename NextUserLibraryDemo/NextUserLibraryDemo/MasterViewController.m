@@ -1,6 +1,5 @@
 #import "MasterViewController.h"
 
-@import NextUser;
 @interface MasterViewController ()
 {
     NSMutableArray<Product *> *products;
@@ -29,6 +28,7 @@
     [products addObject:[Product generateProduct:@"5" withName:@"Vaseline" withPrice:22 withImageResource:@"vaseline.jpg" withDescription:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit."]];
 }
 
+
 - (void)viewWillAppear:(BOOL)animated {
     self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
     [super viewWillAppear:animated];
@@ -48,6 +48,7 @@
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         Product *product = products[indexPath.row];
@@ -127,6 +128,9 @@
 {
     //[self performSegueWithIdentifier:@"show" sender:self];
 }
+
+
+
 
 @end
 

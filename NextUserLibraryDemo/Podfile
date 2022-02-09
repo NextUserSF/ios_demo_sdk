@@ -1,4 +1,4 @@
-platform :ios, '8.0'
+platform :ios, '11.0'
 use_frameworks!
 
 source 'https://github.com/CocoaPods/Specs.git'
@@ -6,6 +6,7 @@ source 'https://github.com/NextUserSF/NextUserPodSpecs.git'
 
 
 target 'NextUserLibraryDemo' do
-    pod 'KontaktSDK', '~> 1.0'
     pod 'NextUser', :path => '/Users/adrian/Dev/NextUser/mobile-sdk-ios'
+    pod 'Firebase/Core'
+    pod 'Firebase/Messaging'
 end

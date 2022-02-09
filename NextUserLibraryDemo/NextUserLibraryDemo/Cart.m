@@ -61,25 +61,12 @@
 
 -(void) trackPurchase
 {
-    NSMutableArray<NUPurchaseItem *> * purchaseItems = [[NSMutableArray alloc] init];
     double total = 0;
     for (CartItem *item in _items) {
-        [purchaseItems addObject:[self toTrackerPurchaseItem:item]];
         total = total + item.quantity * item.product.price;
     }
-    
-    NUPurchase *purchase = [NUPurchase purchaseWithTotalAmount:total items:purchaseItems];
-    [[NextUser tracker] trackPurchase:purchase];
-}
-
--(NUPurchaseItem *) toTrackerPurchaseItem:(CartItem *) item
-{
-    NUPurchaseItem *purchaseItem = [NUPurchaseItem itemWithProductName:item.product.name SKU:item.product.identifier];
-    purchaseItem.price = item.product.price;
-    purchaseItem.productDescription = item.product.prodDescription;
-    purchaseItem.quantity = item.quantity;
-    
-    return purchaseItem;
+    [[NextUser cartManager] setTotal:total];
+    [[NextUser cartManager] checkout];
 }
 
 @end

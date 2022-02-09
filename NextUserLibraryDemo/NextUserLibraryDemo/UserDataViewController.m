@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "UserDataViewController.h"
 
-@import NextUser;
+
 @implementation UserDataViewController
 
 - (void)viewDidLoad {

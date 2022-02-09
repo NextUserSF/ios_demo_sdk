@@ -49,11 +49,12 @@
 
 - (IBAction)addToCartAction:(UIButton *)sender forEvent:(UIEvent *)event
 {
-    [[Cart sharedInstance] addItem:_detailItem withQuantity:(NSInteger)_qtyStepper.value];
-    NUEvent *addToCartEvent =  [NUEvent eventWithName:@"add_to_cart"];
-    [addToCartEvent setFirstParameter: _detailItem.name];
-    [addToCartEvent setSecondParameter: [[NSNumber numberWithDouble: _qtyStepper.value] stringValue]];
-    [[NextUser tracker] trackEvent:addToCartEvent];
+    NUCartItem *nuCartItem = [NUCartItem cartItemWithName:_detailItem.name andID:_detailItem.identifier];
+    nuCartItem.quantity = _qtyStepper.value;
+    nuCartItem.desc = _detailItem.prodDescription;
+    nuCartItem.price = _detailItem.price;
+    [[NextUser cartManager] addOrUpdateItem:nuCartItem];
+    [[Cart sharedInstance] addItem:_detailItem withQuantity:_qtyStepper.value];
     [self.navigationController popViewControllerAnimated: YES];
 }
 

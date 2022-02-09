@@ -1,4 +1,5 @@
 #import <UIKit/UIKit.h>
+@import NextUser;
 
 @interface UserDataViewController : UIViewController
 
